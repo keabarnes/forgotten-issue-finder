@@ -2,9 +2,11 @@
   "name": "github-issue-finder",
   "version": "1.0.0",
   "description": "Filter issues on a repo by ones that have had a merged PR reference them",
-  "main": "src/main.js",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "tsc && node dist/main.js",
+    "prestart": "tsc",
+    "start": "env-cmd node dist/index.js",
+    "build": "rm -rf ./dist && ncc build ./src/index.ts -m --target es2015 --license LICENSE",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,10 +23,13 @@
   },
   "homepage": "https://github.com/keabarnes/github-issue-finder#readme",
   "dependencies": {
-    "@octokit/rest": "^18.1.0"
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
   },
   "devDependencies": {
     "@octokit/types": "^6.8.2",
+    "@vercel/ncc": "^0.27.0",
+    "env-cmd": "^10.1.0",
     "typescript": "^4.1.3"
   }
 }
