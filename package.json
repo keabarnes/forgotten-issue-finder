@@ -1,5 +1,5 @@
 {
-  "name": "github-issue-finder",
+  "name": "forgotten-issue-finder",
   "version": "1.0.0",
   "description": "Filter issues on a repo by ones that have had a merged PR reference them",
   "main": "src/index.ts",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keabarnes/github-issue-finder.git"
+    "url": "git+https://github.com/keabarnes/forgotten-issue-finder.git"
   },
   "keywords": [
     "github"
@@ -19,9 +19,9 @@
   "author": "Kea Barnes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/keabarnes/github-issue-finder/issues"
+    "url": "https://github.com/keabarnes/forgotten-issue-finder/issues"
   },
-  "homepage": "https://github.com/keabarnes/github-issue-finder#readme",
+  "homepage": "https://github.com/keabarnes/forgotten-issue-finder#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0"
