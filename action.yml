@@ -1,5 +1,5 @@
 name: "Forgotten issue finder"
-description: "This action looks through the issues of a repo and finds any that have a merged PR referencing them. It outputs a list of issue links, which can be fed to a Slack message on a weekly/monthly cron job to make sure all issues that PRs have been made for are closed correctly."
+description: "Lists issues of a repo that have a merged PR created at a later date referencing them."
 inputs:
   ignore-label:
     description: "Issue label which can be used to mark issues to ignore them"
