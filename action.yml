@@ -2,7 +2,7 @@ name: "Forgotten issue finder"
 description: "Lists issues of a repo that have a merged PR created at a later date referencing them."
 branding:
   icon: "search"
-  color: "gray"
+  color: "gray-dark"
 inputs:
   ignore-label:
     description: "Issue label which can be used to mark issues to ignore them"
